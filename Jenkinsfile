@@ -4,7 +4,7 @@ pipeline {
         stage('Checkout Git') {
             steps {
                echo 'Pulling...',
-               git branch : 'main',
+               git branch : 'narjessFacture',
                url : 'https://github.com/narjessbencheikh/DevOps-Project'
             }
         }
