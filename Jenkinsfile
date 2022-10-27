@@ -4,7 +4,7 @@ pipeline {
 
         stage('Git Checkout') {
             steps {
-               branch: naejessFacture
+               branch: narjessFacture
                url: 'https://github.com/narjessbencheikh/Projet_Achat.git'
                
             }
