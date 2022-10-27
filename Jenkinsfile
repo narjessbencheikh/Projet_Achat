@@ -11,12 +11,16 @@ pipeline {
             }
         }
 
-        stage('SonarQube') {
+        stage('SonarQube Analysis') {
             steps {
+                script {
 
-                 withSonarQubeEnv(credentialsId: 'sonar_token') {
-                    sh 'mvn clean package sonar:sonar'
+                    withSonarQubeEnv(credentialsId: 'sonar_token') {
+                      sh 'mvn clean package sonar:sonar'
+                    }
                  }
+                 
+                
                
             }
         }
