@@ -10,8 +10,10 @@ pipeline {
                
             }
         }
-
-
-        
+	stage('Affichage date'){
+		steps {
+			echo date
+		}
+	}        
     }
 }
