@@ -14,6 +14,8 @@ public interface ISecteurActiviteService {
 
 	SecteurActivite updateSecteurActivite(SecteurActivite sa);
 
+	
+
 	SecteurActivite retrieveSecteurActivite(Long id);
 
 }

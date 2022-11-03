@@ -32,8 +32,9 @@ public class SecteurActiviteServiceImplTest {
 					.build());
 		assertNotNull(s);
 		assertNotNull(s.getIdSecteurActivite());
+		
 	}
 		
-		
+			
 		
 }
