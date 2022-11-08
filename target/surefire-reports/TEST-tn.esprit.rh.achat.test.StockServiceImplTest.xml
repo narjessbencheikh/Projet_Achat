@@ -1,275 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="tn.esprit.rh.achat.test.StockServiceImplTest" time="10.774" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="tn.esprit.rh.achat.test.StockServiceImplTest" time="0.003" tests="0" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="sun.desktop" value="windows"/>
-    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
-    <property name="file.encoding.pkg" value="sun.io"/>
-    <property name="java.specification.version" value="1.8"/>
-    <property name="sun.cpu.isalist" value="amd64"/>
-    <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\Admin\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\Projet_Achat-main\target\test-classes;C:\Users\Admin\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\Projet_Achat-main\target\classes;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\2.5.3\spring-boot-starter-data-jpa-2.5.3.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-starter-aop\2.5.3\spring-boot-starter-aop-2.5.3.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-aop\5.3.9\spring-aop-5.3.9.jar;C:\Users\Admin\.m2\repository\org\aspectj\aspectjweaver\1.9.7\aspectjweaver-1.9.7.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\2.5.3\spring-boot-starter-jdbc-2.5.3.jar;C:\Users\Admin\.m2\repository\com\zaxxer\HikariCP\4.0.3\HikariCP-4.0.3.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-jdbc\5.3.9\spring-jdbc-5.3.9.jar;C:\Users\Admin\.m2\repository\jakarta\transaction\jakarta.transaction-api\1.3.3\jakarta.transaction-api-1.3.3.jar;C:\Users\Admin\.m2\repository\jakarta\persistence\jakarta.persistence-api\2.2.3\jakarta.persistence-api-2.2.3.jar;C:\Users\Admin\.m2\repository\org\hibernate\hibernate-core\5.4.32.Final\hibernate-core-5.4.32.Final.jar;C:\Users\Admin\.m2\repository\org\jboss\logging\jboss-logging\3.4.2.Final\jboss-logging-3.4.2.Final.jar;C:\Users\Admin\.m2\repository\org\javassist\javassist\3.27.0-GA\javassist-3.27.0-GA.jar;C:\Users\Admin\.m2\repository\net\bytebuddy\byte-buddy\1.10.22\byte-buddy-1.10.22.jar;C:\Users\Admin\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\Admin\.m2\repository\org\jboss\jandex\2.2.3.Final\jandex-2.2.3.Final.jar;C:\Users\Admin\.m2\repository\org\dom4j\dom4j\2.1.3\dom4j-2.1.3.jar;C:\Users\Admin\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.2.Final\hibernate-commons-annotations-5.1.2.Final.jar;C:\Users\Admin\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.4\jaxb-runtime-2.3.4.jar;C:\Users\Admin\.m2\repository\org\glassfish\jaxb\txw2\2.3.4\txw2-2.3.4.jar;C:\Users\Admin\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.12\istack-commons-runtime-3.0.12.jar;C:\Users\Admin\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\Admin\.m2\repository\org\springframework\data\spring-data-jpa\2.5.3\spring-data-jpa-2.5.3.jar;C:\Users\Admin\.m2\repository\org\springframework\data\spring-data-commons\2.5.3\spring-data-commons-2.5.3.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-orm\5.3.9\spring-orm-5.3.9.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-context\5.3.9\spring-context-5.3.9.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-tx\5.3.9\spring-tx-5.3.9.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-beans\5.3.9\spring-beans-5.3.9.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-aspects\5.3.9\spring-aspects-5.3.9.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-starter-web\2.5.3\spring-boot-starter-web-2.5.3.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-starter\2.5.3\spring-boot-starter-2.5.3.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot\2.5.3\spring-boot-2.5.3.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.5.3\spring-boot-autoconfigure-2.5.3.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.5.3\spring-boot-starter-logging-2.5.3.jar;C:\Users\Admin\.m2\repository\ch\qos\logback\logback-classic\1.2.4\logback-classic-1.2.4.jar;C:\Users\Admin\.m2\repository\ch\qos\logback\logback-core\1.2.4\logback-core-1.2.4.jar;C:\Users\Admin\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.14.1\log4j-to-slf4j-2.14.1.jar;C:\Users\Admin\.m2\repository\org\apache\logging\log4j\log4j-api\2.14.1\log4j-api-2.14.1.jar;C:\Users\Admin\.m2\repository\org\slf4j\jul-to-slf4j\1.7.32\jul-to-slf4j-1.7.32.jar;C:\Users\Admin\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\Users\Admin\.m2\repository\org\yaml\snakeyaml\1.28\snakeyaml-1.28.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.5.3\spring-boot-starter-json-2.5.3.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.12.4\jackson-databind-2.12.4.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.12.4\jackson-annotations-2.12.4.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.12.4\jackson-core-2.12.4.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.12.4\jackson-datatype-jdk8-2.12.4.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.12.4\jackson-datatype-jsr310-2.12.4.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.12.4\jackson-module-parameter-names-2.12.4.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\2.5.3\spring-boot-starter-tomcat-2.5.3.jar;C:\Users\Admin\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\9.0.50\tomcat-embed-core-9.0.50.jar;C:\Users\Admin\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\9.0.50\tomcat-embed-el-9.0.50.jar;C:\Users\Admin\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\9.0.50\tomcat-embed-websocket-9.0.50.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-web\5.3.9\spring-web-5.3.9.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-webmvc\5.3.9\spring-webmvc-5.3.9.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-expression\5.3.9\spring-expression-5.3.9.jar;C:\Users\Admin\.m2\repository\mysql\mysql-connector-java\8.0.26\mysql-connector-java-8.0.26.jar;C:\Users\Admin\.m2\repository\org\projectlombok\lombok\1.18.20\lombok-1.18.20.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-starter-test\2.5.3\spring-boot-starter-test-2.5.3.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-test\2.5.3\spring-boot-test-2.5.3.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\2.5.3\spring-boot-test-autoconfigure-2.5.3.jar;C:\Users\Admin\.m2\repository\com\jayway\jsonpath\json-path\2.5.0\json-path-2.5.0.jar;C:\Users\Admin\.m2\repository\net\minidev\json-smart\2.4.7\json-smart-2.4.7.jar;C:\Users\Admin\.m2\repository\net\minidev\accessors-smart\2.4.7\accessors-smart-2.4.7.jar;C:\Users\Admin\.m2\repository\org\ow2\asm\asm\9.1\asm-9.1.jar;C:\Users\Admin\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\Admin\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\Admin\.m2\repository\org\assertj\assertj-core\3.19.0\assertj-core-3.19.0.jar;C:\Users\Admin\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Admin\.m2\repository\org\junit\jupiter\junit-jupiter\5.7.2\junit-jupiter-5.7.2.jar;C:\Users\Admin\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.2\junit-jupiter-api-5.7.2.jar;C:\Users\Admin\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Admin\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Admin\.m2\repository\org\junit\platform\junit-platform-commons\1.7.2\junit-platform-commons-1.7.2.jar;C:\Users\Admin\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.7.2\junit-jupiter-params-5.7.2.jar;C:\Users\Admin\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.2\junit-jupiter-engine-5.7.2.jar;C:\Users\Admin\.m2\repository\org\junit\platform\junit-platform-engine\1.7.2\junit-platform-engine-1.7.2.jar;C:\Users\Admin\.m2\repository\org\mockito\mockito-core\3.9.0\mockito-core-3.9.0.jar;C:\Users\Admin\.m2\repository\net\bytebuddy\byte-buddy-agent\1.10.22\byte-buddy-agent-1.10.22.jar;C:\Users\Admin\.m2\repository\org\objenesis\objenesis\3.2\objenesis-3.2.jar;C:\Users\Admin\.m2\repository\org\mockito\mockito-junit-jupiter\3.9.0\mockito-junit-jupiter-3.9.0.jar;C:\Users\Admin\.m2\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;C:\Users\Admin\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-core\5.3.9\spring-core-5.3.9.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-jcl\5.3.9\spring-jcl-5.3.9.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-test\5.3.9\spring-test-5.3.9.jar;C:\Users\Admin\.m2\repository\org\xmlunit\xmlunit-core\2.8.2\xmlunit-core-2.8.2.jar;C:\Users\Admin\.m2\repository\io\springfox\springfox-boot-starter\3.0.0\springfox-boot-starter-3.0.0.jar;C:\Users\Admin\.m2\repository\io\springfox\springfox-oas\3.0.0\springfox-oas-3.0.0.jar;C:\Users\Admin\.m2\repository\io\swagger\core\v3\swagger-annotations\2.1.2\swagger-annotations-2.1.2.jar;C:\Users\Admin\.m2\repository\io\swagger\core\v3\swagger-models\2.1.2\swagger-models-2.1.2.jar;C:\Users\Admin\.m2\repository\io\springfox\springfox-spi\3.0.0\springfox-spi-3.0.0.jar;C:\Users\Admin\.m2\repository\io\springfox\springfox-schema\3.0.0\springfox-schema-3.0.0.jar;C:\Users\Admin\.m2\repository\io\springfox\springfox-core\3.0.0\springfox-core-3.0.0.jar;C:\Users\Admin\.m2\repository\io\springfox\springfox-spring-web\3.0.0\springfox-spring-web-3.0.0.jar;C:\Users\Admin\.m2\repository\io\github\classgraph\classgraph\4.8.83\classgraph-4.8.83.jar;C:\Users\Admin\.m2\repository\io\springfox\springfox-spring-webflux\3.0.0\springfox-spring-webflux-3.0.0.jar;C:\Users\Admin\.m2\repository\io\springfox\springfox-swagger-common\3.0.0\springfox-swagger-common-3.0.0.jar;C:\Users\Admin\.m2\repository\org\mapstruct\mapstruct\1.3.1.Final\mapstruct-1.3.1.Final.jar;C:\Users\Admin\.m2\repository\io\springfox\springfox-data-rest\3.0.0\springfox-data-rest-3.0.0.jar;C:\Users\Admin\.m2\repository\io\springfox\springfox-bean-validators\3.0.0\springfox-bean-validators-3.0.0.jar;C:\Users\Admin\.m2\repository\io\springfox\springfox-swagger2\3.0.0\springfox-swagger2-3.0.0.jar;C:\Users\Admin\.m2\repository\io\swagger\swagger-annotations\1.5.20\swagger-annotations-1.5.20.jar;C:\Users\Admin\.m2\repository\io\swagger\swagger-models\1.5.20\swagger-models-1.5.20.jar;C:\Users\Admin\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\Admin\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar;C:\Users\Admin\.m2\repository\org\springframework\plugin\spring-plugin-core\2.0.0.RELEASE\spring-plugin-core-2.0.0.RELEASE.jar;C:\Users\Admin\.m2\repository\org\springframework\plugin\spring-plugin-metadata\2.0.0.RELEASE\spring-plugin-metadata-2.0.0.RELEASE.jar;C:\Users\Admin\.m2\repository\io\springfox\springfox-swagger-ui\3.0.0\springfox-swagger-ui-3.0.0.jar;C:\Users\Admin\.m2\repository\io\springfox\springfox-spring-webmvc\3.0.0\springfox-spring-webmvc-3.0.0.jar;C:\Users\Admin\.m2\repository\com\h2database\h2\1.4.200\h2-1.4.200.jar;"/>
+    <property name="jansi.mode" value="force"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_60\jre\bin"/>
+    <property name="java.vm.version" value="25.60-b23"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="sun.arch.data.model" value="64"/>
-    <property name="user.variant" value=""/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Admin\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\Projet_Achat-main"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="user.timezone" value="GMT+01:00"/>
-    <property name="java.vm.specification.version" value="1.8"/>
-    <property name="os.name" value="Windows 10"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
     <property name="user.country" value="FR"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_60\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\Admin\AppData\Local\Temp\surefire3245094796003926886\surefirebooter2204903122771617009.jar C:\Users\Admin\AppData\Local\Temp\surefire3245094796003926886 2022-11-08T14-27-43_442-jvmRun1 surefire6282476936980734612tmp surefire_02447509717690042803tmp"/>
-    <property name="surefire.test.class.path" value="C:\Users\Admin\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\Projet_Achat-main\target\test-classes;C:\Users\Admin\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\Projet_Achat-main\target\classes;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\2.5.3\spring-boot-starter-data-jpa-2.5.3.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-starter-aop\2.5.3\spring-boot-starter-aop-2.5.3.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-aop\5.3.9\spring-aop-5.3.9.jar;C:\Users\Admin\.m2\repository\org\aspectj\aspectjweaver\1.9.7\aspectjweaver-1.9.7.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\2.5.3\spring-boot-starter-jdbc-2.5.3.jar;C:\Users\Admin\.m2\repository\com\zaxxer\HikariCP\4.0.3\HikariCP-4.0.3.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-jdbc\5.3.9\spring-jdbc-5.3.9.jar;C:\Users\Admin\.m2\repository\jakarta\transaction\jakarta.transaction-api\1.3.3\jakarta.transaction-api-1.3.3.jar;C:\Users\Admin\.m2\repository\jakarta\persistence\jakarta.persistence-api\2.2.3\jakarta.persistence-api-2.2.3.jar;C:\Users\Admin\.m2\repository\org\hibernate\hibernate-core\5.4.32.Final\hibernate-core-5.4.32.Final.jar;C:\Users\Admin\.m2\repository\org\jboss\logging\jboss-logging\3.4.2.Final\jboss-logging-3.4.2.Final.jar;C:\Users\Admin\.m2\repository\org\javassist\javassist\3.27.0-GA\javassist-3.27.0-GA.jar;C:\Users\Admin\.m2\repository\net\bytebuddy\byte-buddy\1.10.22\byte-buddy-1.10.22.jar;C:\Users\Admin\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\Admin\.m2\repository\org\jboss\jandex\2.2.3.Final\jandex-2.2.3.Final.jar;C:\Users\Admin\.m2\repository\org\dom4j\dom4j\2.1.3\dom4j-2.1.3.jar;C:\Users\Admin\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.2.Final\hibernate-commons-annotations-5.1.2.Final.jar;C:\Users\Admin\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.4\jaxb-runtime-2.3.4.jar;C:\Users\Admin\.m2\repository\org\glassfish\jaxb\txw2\2.3.4\txw2-2.3.4.jar;C:\Users\Admin\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.12\istack-commons-runtime-3.0.12.jar;C:\Users\Admin\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\Admin\.m2\repository\org\springframework\data\spring-data-jpa\2.5.3\spring-data-jpa-2.5.3.jar;C:\Users\Admin\.m2\repository\org\springframework\data\spring-data-commons\2.5.3\spring-data-commons-2.5.3.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-orm\5.3.9\spring-orm-5.3.9.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-context\5.3.9\spring-context-5.3.9.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-tx\5.3.9\spring-tx-5.3.9.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-beans\5.3.9\spring-beans-5.3.9.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-aspects\5.3.9\spring-aspects-5.3.9.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-starter-web\2.5.3\spring-boot-starter-web-2.5.3.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-starter\2.5.3\spring-boot-starter-2.5.3.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot\2.5.3\spring-boot-2.5.3.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.5.3\spring-boot-autoconfigure-2.5.3.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.5.3\spring-boot-starter-logging-2.5.3.jar;C:\Users\Admin\.m2\repository\ch\qos\logback\logback-classic\1.2.4\logback-classic-1.2.4.jar;C:\Users\Admin\.m2\repository\ch\qos\logback\logback-core\1.2.4\logback-core-1.2.4.jar;C:\Users\Admin\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.14.1\log4j-to-slf4j-2.14.1.jar;C:\Users\Admin\.m2\repository\org\apache\logging\log4j\log4j-api\2.14.1\log4j-api-2.14.1.jar;C:\Users\Admin\.m2\repository\org\slf4j\jul-to-slf4j\1.7.32\jul-to-slf4j-1.7.32.jar;C:\Users\Admin\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\Users\Admin\.m2\repository\org\yaml\snakeyaml\1.28\snakeyaml-1.28.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.5.3\spring-boot-starter-json-2.5.3.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.12.4\jackson-databind-2.12.4.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.12.4\jackson-annotations-2.12.4.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.12.4\jackson-core-2.12.4.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.12.4\jackson-datatype-jdk8-2.12.4.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.12.4\jackson-datatype-jsr310-2.12.4.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.12.4\jackson-module-parameter-names-2.12.4.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\2.5.3\spring-boot-starter-tomcat-2.5.3.jar;C:\Users\Admin\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\9.0.50\tomcat-embed-core-9.0.50.jar;C:\Users\Admin\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\9.0.50\tomcat-embed-el-9.0.50.jar;C:\Users\Admin\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\9.0.50\tomcat-embed-websocket-9.0.50.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-web\5.3.9\spring-web-5.3.9.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-webmvc\5.3.9\spring-webmvc-5.3.9.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-expression\5.3.9\spring-expression-5.3.9.jar;C:\Users\Admin\.m2\repository\mysql\mysql-connector-java\8.0.26\mysql-connector-java-8.0.26.jar;C:\Users\Admin\.m2\repository\org\projectlombok\lombok\1.18.20\lombok-1.18.20.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-starter-test\2.5.3\spring-boot-starter-test-2.5.3.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-test\2.5.3\spring-boot-test-2.5.3.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\2.5.3\spring-boot-test-autoconfigure-2.5.3.jar;C:\Users\Admin\.m2\repository\com\jayway\jsonpath\json-path\2.5.0\json-path-2.5.0.jar;C:\Users\Admin\.m2\repository\net\minidev\json-smart\2.4.7\json-smart-2.4.7.jar;C:\Users\Admin\.m2\repository\net\minidev\accessors-smart\2.4.7\accessors-smart-2.4.7.jar;C:\Users\Admin\.m2\repository\org\ow2\asm\asm\9.1\asm-9.1.jar;C:\Users\Admin\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\Admin\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\Admin\.m2\repository\org\assertj\assertj-core\3.19.0\assertj-core-3.19.0.jar;C:\Users\Admin\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Admin\.m2\repository\org\junit\jupiter\junit-jupiter\5.7.2\junit-jupiter-5.7.2.jar;C:\Users\Admin\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.2\junit-jupiter-api-5.7.2.jar;C:\Users\Admin\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Admin\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Admin\.m2\repository\org\junit\platform\junit-platform-commons\1.7.2\junit-platform-commons-1.7.2.jar;C:\Users\Admin\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.7.2\junit-jupiter-params-5.7.2.jar;C:\Users\Admin\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.2\junit-jupiter-engine-5.7.2.jar;C:\Users\Admin\.m2\repository\org\junit\platform\junit-platform-engine\1.7.2\junit-platform-engine-1.7.2.jar;C:\Users\Admin\.m2\repository\org\mockito\mockito-core\3.9.0\mockito-core-3.9.0.jar;C:\Users\Admin\.m2\repository\net\bytebuddy\byte-buddy-agent\1.10.22\byte-buddy-agent-1.10.22.jar;C:\Users\Admin\.m2\repository\org\objenesis\objenesis\3.2\objenesis-3.2.jar;C:\Users\Admin\.m2\repository\org\mockito\mockito-junit-jupiter\3.9.0\mockito-junit-jupiter-3.9.0.jar;C:\Users\Admin\.m2\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;C:\Users\Admin\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-core\5.3.9\spring-core-5.3.9.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-jcl\5.3.9\spring-jcl-5.3.9.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-test\5.3.9\spring-test-5.3.9.jar;C:\Users\Admin\.m2\repository\org\xmlunit\xmlunit-core\2.8.2\xmlunit-core-2.8.2.jar;C:\Users\Admin\.m2\repository\io\springfox\springfox-boot-starter\3.0.0\springfox-boot-starter-3.0.0.jar;C:\Users\Admin\.m2\repository\io\springfox\springfox-oas\3.0.0\springfox-oas-3.0.0.jar;C:\Users\Admin\.m2\repository\io\swagger\core\v3\swagger-annotations\2.1.2\swagger-annotations-2.1.2.jar;C:\Users\Admin\.m2\repository\io\swagger\core\v3\swagger-models\2.1.2\swagger-models-2.1.2.jar;C:\Users\Admin\.m2\repository\io\springfox\springfox-spi\3.0.0\springfox-spi-3.0.0.jar;C:\Users\Admin\.m2\repository\io\springfox\springfox-schema\3.0.0\springfox-schema-3.0.0.jar;C:\Users\Admin\.m2\repository\io\springfox\springfox-core\3.0.0\springfox-core-3.0.0.jar;C:\Users\Admin\.m2\repository\io\springfox\springfox-spring-web\3.0.0\springfox-spring-web-3.0.0.jar;C:\Users\Admin\.m2\repository\io\github\classgraph\classgraph\4.8.83\classgraph-4.8.83.jar;C:\Users\Admin\.m2\repository\io\springfox\springfox-spring-webflux\3.0.0\springfox-spring-webflux-3.0.0.jar;C:\Users\Admin\.m2\repository\io\springfox\springfox-swagger-common\3.0.0\springfox-swagger-common-3.0.0.jar;C:\Users\Admin\.m2\repository\org\mapstruct\mapstruct\1.3.1.Final\mapstruct-1.3.1.Final.jar;C:\Users\Admin\.m2\repository\io\springfox\springfox-data-rest\3.0.0\springfox-data-rest-3.0.0.jar;C:\Users\Admin\.m2\repository\io\springfox\springfox-bean-validators\3.0.0\springfox-bean-validators-3.0.0.jar;C:\Users\Admin\.m2\repository\io\springfox\springfox-swagger2\3.0.0\springfox-swagger2-3.0.0.jar;C:\Users\Admin\.m2\repository\io\swagger\swagger-annotations\1.5.20\swagger-annotations-1.5.20.jar;C:\Users\Admin\.m2\repository\io\swagger\swagger-models\1.5.20\swagger-models-1.5.20.jar;C:\Users\Admin\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\Admin\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar;C:\Users\Admin\.m2\repository\org\springframework\plugin\spring-plugin-core\2.0.0.RELEASE\spring-plugin-core-2.0.0.RELEASE.jar;C:\Users\Admin\.m2\repository\org\springframework\plugin\spring-plugin-metadata\2.0.0.RELEASE\spring-plugin-metadata-2.0.0.RELEASE.jar;C:\Users\Admin\.m2\repository\io\springfox\springfox-swagger-ui\3.0.0\springfox-swagger-ui-3.0.0.jar;C:\Users\Admin\.m2\repository\io\springfox\springfox-spring-webmvc\3.0.0\springfox-spring-webmvc-3.0.0.jar;C:\Users\Admin\.m2\repository\com\h2database\h2\1.4.200\h2-1.4.200.jar;"/>
-    <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="C:\Users\Admin"/>
-    <property name="user.language" value="fr"/>
-    <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_60\jre"/>
-    <property name="basedir" value="C:\Users\Admin\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\Projet_Achat-main"/>
-    <property name="style.color" value="always"/>
-    <property name="file.separator" value="\"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\Admin\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\Projet_Achat-main"/>
+    <property name="java.runtime.version" value="1.8.0_60-b27"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_60\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\Admin\AppData\Local\Temp\"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Users\Admin\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf13671122606728369449.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_60\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;F:/sts-4.16.1.RELEASE//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.4.v20221004-1257/jre/bin/server;F:/sts-4.16.1.RELEASE//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.4.v20221004-1257/jre/bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\Admin\Downloads;C:\Program Files\NVIDIA Corporation\Nsight Compute 2020.3.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\bin;C:\Users\Admin\OneDrive\Bureau\googledrive\chromedriver.exe;C:\HashiCorp\Vagrant\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\libnvvp;C:\Users\Admin\AppData\Local\Programs\Python\Python39\;C:\Users\Admin\AppData\Local\Programs\Python\Python39\Scripts\;F:\Git\cmd;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Program Files\Java\jdk1.8.0_60\bin;C:\Users\Admin\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\Admin\AppData\Local\Programs\Python\Python310\;C:\Users\Admin\AppData\Local\Programs\Eclipse Adoptium\jdk-17.0.4.101-hotspot\bin;C:\Users\Admin\anaconda3;C:\Users\Admin\anaconda3\Library\mingw-w64\bin;C:\Users\Admin\anaconda3\Library\usr\bin;C:\Users\Admin\anaconda3\Library\bin;C:\Users\Admin\anaconda3\Scripts;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;C:\Users\Admin\Downloads;C:\Users\Admin\PyCharm 2022.1.3\bin;;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\libnvvp;C:\Program Files\NVIDIA Corporation\Nsight Compute 2020.3.0;C:\Users\Admin\OneDrive\Bureau\googledrive\chromedriver.exe;C:\Windows\system32;E:\Program Files (x86)\Microsoft VS Code;;F:\sts-4.16.1.RELEASE;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="FILE_LOG_CHARSET" value="windows-1252"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="java.awt.headless" value="true"/>
-    <property name="surefire.real.class.path" value="C:\Users\Admin\AppData\Local\Temp\surefire3245094796003926886\surefirebooter2204903122771617009.jar;C:\\Users\\Admin\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.5\\org.jacoco.agent-0.8.5-runtime.jar"/>
-    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_60\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_60\jre\classes"/>
-    <property name="user.script" value=""/>
-    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="java.runtime.version" value="1.8.0_60-b27"/>
-    <property name="user.name" value="Admin"/>
-    <property name="path.separator" value=";"/>
-    <property name="os.version" value="10.0"/>
-    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_60\jre\lib\endorsed"/>
-    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="file.encoding" value="Cp1252"/>
-    <property name="spring.beaninfo.ignore" value="true"/>
-    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="localRepository" value="C:\Users\Admin\.m2\repository"/>
-    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
-    <property name="java.io.tmpdir" value="C:\Users\Admin\AppData\Local\Temp\"/>
-    <property name="com.zaxxer.hikari.pool_number" value="1"/>
-    <property name="java.version" value="1.8.0_60"/>
-    <property name="user.dir" value="C:\Users\Admin\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\Projet_Achat-main"/>
-    <property name="os.arch" value="amd64"/>
-    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="PID" value="16648"/>
-    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
-    <property name="sun.os.patch.level" value=""/>
-    <property name="CONSOLE_LOG_CHARSET" value="windows-1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_60\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;F:/sts-4.16.1.RELEASE//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.4.v20221004-1257/jre/bin/server;F:/sts-4.16.1.RELEASE//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.4.v20221004-1257/jre/bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\Admin\Downloads;C:\Program Files\NVIDIA Corporation\Nsight Compute 2020.3.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\bin;C:\Users\Admin\OneDrive\Bureau\googledrive\chromedriver.exe;C:\HashiCorp\Vagrant\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\libnvvp;C:\Users\Admin\AppData\Local\Programs\Python\Python39\;C:\Users\Admin\AppData\Local\Programs\Python\Python39\Scripts\;F:\Git\cmd;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Program Files\Java\jdk1.8.0_60\bin;C:\Users\Admin\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\Admin\AppData\Local\Programs\Python\Python310\;C:\Users\Admin\AppData\Local\Programs\Eclipse Adoptium\jdk-17.0.4.101-hotspot\bin;C:\Users\Admin\anaconda3;C:\Users\Admin\anaconda3\Library\mingw-w64\bin;C:\Users\Admin\anaconda3\Library\usr\bin;C:\Users\Admin\anaconda3\Library\bin;C:\Users\Admin\anaconda3\Scripts;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;C:\Users\Admin\Downloads;C:\Users\Admin\PyCharm 2022.1.3\bin;;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\libnvvp;C:\Program Files\NVIDIA Corporation\Nsight Compute 2020.3.0;C:\Users\Admin\OneDrive\Bureau\googledrive\chromedriver.exe;C:\Windows\system32;E:\Program Files (x86)\Microsoft VS Code;;F:\sts-4.16.1.RELEASE;;."/>
-    <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="java.vm.version" value="25.60-b23"/>
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_60\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
-    <property name="CONSOLE_LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss} - %-5level - %logger{60} - %msg%n"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\Admin"/>
+    <property name="user.timezone" value="GMT+01:00"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="Admin"/>
+    <property name="java.class.path" value="F:\sts-4.16.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.601.20220820-1147\jars\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_60\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -Dstyle.color=always install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="fr"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_60"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_60\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_60\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_60\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Users\Admin\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\Projet_Achat-main\EMBEDDED"/>
+    <property name="style.color" value="always"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="TestretrieveStock" classname="tn.esprit.rh.achat.test.StockServiceImplTest" time="0.26">
-    <system-out><![CDATA[14:27:48.520 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-14:27:48.547 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-14:27:48.631 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [tn.esprit.rh.achat.test.StockServiceImplTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-14:27:48.653 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [tn.esprit.rh.achat.test.StockServiceImplTest], using SpringBootContextLoader
-14:27:48.662 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [tn.esprit.rh.achat.test.StockServiceImplTest]: class path resource [tn/esprit/rh/achat/test/StockServiceImplTest-context.xml] does not exist
-14:27:48.662 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [tn.esprit.rh.achat.test.StockServiceImplTest]: class path resource [tn/esprit/rh/achat/test/StockServiceImplTestContext.groovy] does not exist
-14:27:48.663 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [tn.esprit.rh.achat.test.StockServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-14:27:48.664 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [tn.esprit.rh.achat.test.StockServiceImplTest]: StockServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-14:27:48.732 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [tn.esprit.rh.achat.test.StockServiceImplTest]
-14:27:48.864 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\Admin\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\Projet_Achat-main\target\classes\tn\esprit\rh\achat\AchatApplication.class]
-14:27:48.865 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration tn.esprit.rh.achat.AchatApplication for test class tn.esprit.rh.achat.test.StockServiceImplTest
-14:27:49.057 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [tn.esprit.rh.achat.test.StockServiceImplTest]: using defaults.
-14:27:49.058 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-14:27:49.094 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@738a39cc, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@42e202d7, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@38e7860c, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@62158991, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@40738846, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1255de25, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1686ed85, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5891b7c5, org.springframework.test.context.event.EventPublishingTestExecutionListener@4fc3529, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@38e46765, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@192f5f39, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4cd5fc46, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2965dd88, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3221588e, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@51141f64]
-14:27:49.101 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@5c997de8 testClass = StockServiceImplTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@45bf93bb testClass = StockServiceImplTest, locations = '{}', classes = '{class tn.esprit.rh.achat.AchatApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@72bdd7c7, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@630390b9, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3ff54f3d, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@67536ae0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@18a19e, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@7c2b6087], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
-14:27:49.166 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
-
-  .   ____          _            __ _ _
- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
-  '  |____| .__|_| |_|_| |_\__, | / / / /
- =========|_|==============|___/=/_/_/_/
- :: Spring Boot ::                (v2.5.3)
-
-2022-11-08 14:27:49 - INFO  - tn.esprit.rh.achat.test.StockServiceImplTest - Starting StockServiceImplTest using Java 1.8.0_60 on DESKTOP-E90PMI4 with PID 16648 (started by Admin in C:\Users\Admin\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\Projet_Achat-main)
-2022-11-08 14:27:49 - INFO  - tn.esprit.rh.achat.test.StockServiceImplTest - No active profile set, falling back to default profiles: default
-2022-11-08 14:27:51 - INFO  - o.s.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-11-08 14:27:51 - INFO  - o.s.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 134 ms. Found 10 JPA repository interfaces.
-2022-11-08 14:27:52 - INFO  - org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-11-08 14:27:52 - INFO  - org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
-2022-11-08 14:27:52 - INFO  - org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-11-08 14:27:52 - INFO  - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2022-11-08 14:27:53 - INFO  - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2022-11-08 14:27:53 - INFO  - org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2022-11-08 14:27:54 - INFO  - o.h.e.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-11-08 14:27:54 - INFO  - o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-11-08 14:27:56 - WARN  - o.s.b.a.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-11-08 14:27:58 - INFO  - tn.esprit.rh.achat.test.StockServiceImplTest - Started StockServiceImplTest in 9.495 seconds (JVM running for 11.157)
-2022-11-08 14:27:58 - INFO  - tn.esprit.rh.achat.services.StockServiceImpl - In method retrieveStock
-Hibernate: select stock0_.id_stock as id_stock1_11_0_, stock0_.libelle_stock as libelle_2_11_0_, stock0_.qte as qte3_11_0_, stock0_.qte_min as qte_min4_11_0_ from stock stock0_ where stock0_.id_stock=?
-2022-11-08 14:27:58 - INFO  - tn.esprit.rh.achat.services.StockServiceImpl - out of method retrieveStock
-2022-11-08 14:27:58 - INFO  - tn.esprit.rh.achat.services.StockServiceImpl - Method execution time: 129 milliseconds.
-ID = 1
-]]></system-out>
-  </testcase>
-  <testcase name="TestAddSecteurActivite" classname="tn.esprit.rh.achat.test.StockServiceImplTest" time="0.048">
-    <system-out><![CDATA[2022-11-08 14:27:58 - INFO  - tn.esprit.rh.achat.services.StockServiceImpl - In method addStock
-Hibernate: insert into stock (libelle_stock, qte, qte_min) values (?, ?, ?)
-]]></system-out>
-  </testcase>
-  <testcase name="TestretrieveAllStocks" classname="tn.esprit.rh.achat.test.StockServiceImplTest" time="0.163">
-    <system-out><![CDATA[2022-11-08 14:27:59 - INFO  - tn.esprit.rh.achat.services.StockServiceImpl - In method retrieveAllStocks
-Hibernate: select stock0_.id_stock as id_stock1_11_, stock0_.libelle_stock as libelle_2_11_, stock0_.qte as qte3_11_, stock0_.qte_min as qte_min4_11_ from stock stock0_
-2022-11-08 14:27:59 - INFO  - tn.esprit.rh.achat.services.StockServiceImpl -  Stock : tn.esprit.rh.achat.entities.Stock@6885fcf8
-2022-11-08 14:27:59 - INFO  - tn.esprit.rh.achat.services.StockServiceImpl -  Stock : tn.esprit.rh.achat.entities.Stock@412dd654
-2022-11-08 14:27:59 - INFO  - tn.esprit.rh.achat.services.StockServiceImpl -  Stock : tn.esprit.rh.achat.entities.Stock@47179dab
-2022-11-08 14:27:59 - INFO  - tn.esprit.rh.achat.services.StockServiceImpl -  Stock : tn.esprit.rh.achat.entities.Stock@7e2388c1
-2022-11-08 14:27:59 - INFO  - tn.esprit.rh.achat.services.StockServiceImpl -  Stock : tn.esprit.rh.achat.entities.Stock@3906d9c1
-2022-11-08 14:27:59 - INFO  - tn.esprit.rh.achat.services.StockServiceImpl -  Stock : tn.esprit.rh.achat.entities.Stock@16b637c3
-2022-11-08 14:27:59 - INFO  - tn.esprit.rh.achat.services.StockServiceImpl -  Stock : tn.esprit.rh.achat.entities.Stock@6db70a7b
-2022-11-08 14:27:59 - INFO  - tn.esprit.rh.achat.services.StockServiceImpl -  Stock : tn.esprit.rh.achat.entities.Stock@fb0f28c
-2022-11-08 14:27:59 - INFO  - tn.esprit.rh.achat.services.StockServiceImpl -  Stock : tn.esprit.rh.achat.entities.Stock@77fa6a
-2022-11-08 14:27:59 - INFO  - tn.esprit.rh.achat.services.StockServiceImpl -  Stock : tn.esprit.rh.achat.entities.Stock@27d8cd88
-2022-11-08 14:27:59 - INFO  - tn.esprit.rh.achat.services.StockServiceImpl -  Stock : tn.esprit.rh.achat.entities.Stock@7269ffda
-2022-11-08 14:27:59 - INFO  - tn.esprit.rh.achat.services.StockServiceImpl -  Stock : tn.esprit.rh.achat.entities.Stock@7a454789
-2022-11-08 14:27:59 - INFO  - tn.esprit.rh.achat.services.StockServiceImpl -  Stock : tn.esprit.rh.achat.entities.Stock@45de4601
-2022-11-08 14:27:59 - INFO  - tn.esprit.rh.achat.services.StockServiceImpl -  Stock : tn.esprit.rh.achat.entities.Stock@1921dbdb
-2022-11-08 14:27:59 - INFO  - tn.esprit.rh.achat.services.StockServiceImpl -  Stock : tn.esprit.rh.achat.entities.Stock@4908be79
-2022-11-08 14:27:59 - INFO  - tn.esprit.rh.achat.services.StockServiceImpl -  Stock : tn.esprit.rh.achat.entities.Stock@7e510717
-2022-11-08 14:27:59 - INFO  - tn.esprit.rh.achat.services.StockServiceImpl -  Stock : tn.esprit.rh.achat.entities.Stock@198b1ed
-2022-11-08 14:27:59 - INFO  - tn.esprit.rh.achat.services.StockServiceImpl -  Stock : tn.esprit.rh.achat.entities.Stock@16f05d06
-2022-11-08 14:27:59 - INFO  - tn.esprit.rh.achat.services.StockServiceImpl -  Stock : tn.esprit.rh.achat.entities.Stock@1a87d2d7
-2022-11-08 14:27:59 - INFO  - tn.esprit.rh.achat.services.StockServiceImpl -  Stock : tn.esprit.rh.achat.entities.Stock@6c18172f
-2022-11-08 14:27:59 - INFO  - tn.esprit.rh.achat.services.StockServiceImpl -  Stock : tn.esprit.rh.achat.entities.Stock@284bd498
-2022-11-08 14:27:59 - INFO  - tn.esprit.rh.achat.services.StockServiceImpl -  Stock : tn.esprit.rh.achat.entities.Stock@3cc7a4fa
-2022-11-08 14:27:59 - INFO  - tn.esprit.rh.achat.services.StockServiceImpl -  Stock : tn.esprit.rh.achat.entities.Stock@1872c8df
-2022-11-08 14:27:59 - INFO  - tn.esprit.rh.achat.services.StockServiceImpl -  Stock : tn.esprit.rh.achat.entities.Stock@347f0591
-2022-11-08 14:27:59 - INFO  - tn.esprit.rh.achat.services.StockServiceImpl - out of method retrieveAllStocks
-Stock : 1
-Stock : gggg
-Stock : 5
-Stock : 1
-**********************************
-Stock : 3
-Stock : gggg
-Stock : 5
-Stock : 1
-**********************************
-Stock : 4
-Stock : gggg
-Stock : 5
-Stock : 1
-**********************************
-Stock : 5
-Stock : gggg
-Stock : 5
-Stock : 1
-**********************************
-Stock : 6
-Stock : gggg
-Stock : 5
-Stock : 1
-**********************************
-Stock : 7
-Stock : dd
-Stock : 8
-Stock : 12
-**********************************
-Stock : 8
-Stock : dd
-Stock : 8
-Stock : 12
-**********************************
-Stock : 9
-Stock : gggg
-Stock : 5
-Stock : 1
-**********************************
-Stock : 10
-Stock : caasd
-Stock : 546
-Stock : 1
-**********************************
-Stock : 11
-Stock : caasd
-Stock : 546
-Stock : 1
-**********************************
-Stock : 12
-Stock : caasd
-Stock : 546
-Stock : 1
-**********************************
-Stock : 13
-Stock : caasd
-Stock : 546
-Stock : 1
-**********************************
-Stock : 14
-Stock : caasd
-Stock : 546
-Stock : 1
-**********************************
-Stock : 15
-Stock : caasd
-Stock : 546
-Stock : 1
-**********************************
-Stock : 16
-Stock : caasd
-Stock : 546
-Stock : 1
-**********************************
-Stock : 17
-Stock : caasd
-Stock : 546
-Stock : 1
-**********************************
-Stock : 18
-Stock : caasd
-Stock : 546
-Stock : 1
-**********************************
-Stock : 19
-Stock : caasd
-Stock : 546
-Stock : 1
-**********************************
-Stock : 20
-Stock : caasd
-Stock : 546
-Stock : 1
-**********************************
-Stock : 21
-Stock : caasd
-Stock : 546
-Stock : 1
-**********************************
-Stock : 22
-Stock : caasd
-Stock : 546
-Stock : 1
-**********************************
-Stock : 23
-Stock : caasd
-Stock : 546
-Stock : 1
-**********************************
-Stock : 24
-Stock : caasd
-Stock : 546
-Stock : 1
-**********************************
-Stock : 25
-Stock : caasd
-Stock : 546
-Stock : 1
-**********************************
-Quantités de Stock : 24
-Hibernate: select stock0_.id_stock as id_stock1_11_, stock0_.libelle_stock as libelle_2_11_, stock0_.qte as qte3_11_, stock0_.qte_min as qte_min4_11_ from stock stock0_
-]]></system-out>
-  </testcase>
 </testsuite>
