@@ -1,4 +1,4 @@
-package tn.esprit.achat.services.MockSecteur;
+package tn.esprit.rh.achat;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.times;
