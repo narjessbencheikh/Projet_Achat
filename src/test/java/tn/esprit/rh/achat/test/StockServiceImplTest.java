@@ -1,36 +1,21 @@
 package tn.esprit.rh.achat.test;
 
 import static org.assertj.core.api.Assertions.assertThat;
-
 import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
-
-import java.util.ArrayList;
 import java.util.List;
-
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.junit.runner.RunWith;
-import org.mockito.ArgumentCaptor;
-import org.mockito.Mock;
-import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
-
 import tn.esprit.rh.achat.entities.Stock;
 import tn.esprit.rh.achat.repositories.StockRepository;
 import tn.esprit.rh.achat.services.IStockService;
 import tn.esprit.rh.achat.services.StockServiceImpl;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 
-@RunWith(SpringRunner.class)
 @SpringBootTest
-@ExtendWith(MockitoExtension.class)
-
+@ExtendWith(SpringExtension.class)
 public class StockServiceImplTest {
 
 	@Autowired
@@ -50,12 +35,12 @@ public class StockServiceImplTest {
 	
 	
 	@Test
-	public void TestAddSecteurActivite() {
+    void TestAddSecteurActivite() {
 		
 	Stock s = stock.addStock(Stock.builder()
 				
-				.libelleStock("gggg")
-				.qte(5)
+				.libelleStock("caasd")
+				.qte(546)
 				.qteMin(1)
 				.build());
 	assertNotNull(s);
@@ -66,7 +51,7 @@ public class StockServiceImplTest {
 	
 	
 	@Test
-	public void TestretrieveAllStocks(){
+	void TestretrieveAllStocks(){
 		
 		List<Stock> l = stock.retrieveAllStocks();
 		for(Stock s : l) {
@@ -86,14 +71,15 @@ public class StockServiceImplTest {
 	}
 	
 	@Test
-	public void TestretrieveStock(){
+	void TestretrieveStock(){
 		
 		Stock exist = stock.retrieveStock((long) 1);
 		System.out.println("ID = " +exist.getIdStock());
+		assertNotNull(exist);
 }
 	
 	@Test
-	public void TestdeleteStock(){
+	void TestdeleteStock(){
 		
 		stock.deleteStock((long) 2);
 		
