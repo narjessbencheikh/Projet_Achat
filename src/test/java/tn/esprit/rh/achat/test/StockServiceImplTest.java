@@ -29,7 +29,7 @@ public class StockServiceImplTest {
 	//@Test
 	//public void TestGetAllStock() {
 		//when(stock.retrieveAllStocks());
-		//verify(strepo)findAll();
+		//verify(strepo).findAll();
 	//}
 	
 	
