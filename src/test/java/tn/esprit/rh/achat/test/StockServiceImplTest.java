@@ -10,7 +10,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import tn.esprit.rh.achat.entities.Stock;
 import tn.esprit.rh.achat.repositories.StockRepository;
 import tn.esprit.rh.achat.services.IStockService;
-import tn.esprit.rh.achat.services.StockServiceImpl;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 
@@ -78,12 +77,12 @@ public class StockServiceImplTest {
 		assertNotNull(exist);
 }
 	
-	@Test
-	void TestdeleteStock(){
+	//@Test
+	//void TestdeleteStock(){
 		
-		stock.deleteStock((long) 2);
+		//stock.deleteStock((long) 2);
 		
-}
+//}
 	
 	
 	
