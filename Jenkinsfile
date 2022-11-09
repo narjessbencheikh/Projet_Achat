@@ -37,5 +37,25 @@ pipeline {
                  }
               }
 
+              stage('Build Docker Image') {
+                 steps {
+                 sh 'docker build -t sirine100/dockerfile_spring:2.2.4 .'
+                 }
+              }
+
+              stage('Push Docker Image') {
+                   steps {
+                     withCredentials([string(credentialsId: 'DockerhubPWS', variable: 'DockerhubPWS')]) {
+                     sh "docker login -u sirine100 -p ${DockerhubPWS}"
+                     }
+                     sh 'docker push sirine100/dockerfile_spring:2.2.4'
+                   }
+              }
+              stage('DOCKER COMPOSE') {
+                   steps {
+                      sh 'docker-compose up -d --build'
+                   }
+              }
+          }
               }
           }
