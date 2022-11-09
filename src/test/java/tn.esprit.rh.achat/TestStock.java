@@ -87,11 +87,3 @@ public class TestSotck {
         Assertions.assertEquals(s,s1);
 
     }
-
-    @Test
-    public void testDeletestock() {
-        stockService.deleteStock(s.getIdStock());
-        Mockito.verify(sto, Mockito.times(1)).deleteById(s.getIdStock());
-    }
-
-}
