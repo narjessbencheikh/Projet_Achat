@@ -68,7 +68,6 @@
 	<repository>
 	<id>deploymentRepo</id>
 	<name>Nexus Repository</name>
-	
 	<url>http:192.168.122.1:8081/repository/maven-snapshots</url>
 	</repository>
 	</distributionManagement>
@@ -99,6 +98,7 @@
 				<version>3.1.0</version>
 			</plugin>
 		</plugins>
+		<finalName>app-achat-1.0</finalName>
 		
 	</build>
 
