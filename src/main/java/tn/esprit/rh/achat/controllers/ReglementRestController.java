@@ -4,11 +4,19 @@ import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.*;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import tn.esprit.rh.achat.entities.Facture;
 import tn.esprit.rh.achat.entities.Reglement;
 import tn.esprit.rh.achat.services.IReglementService;
 
 import java.util.Date;
 import java.util.List;
+
+import javax.persistence.ManyToOne;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 @RestController
 @Api(tags = "Gestion des reglements")
@@ -18,7 +26,8 @@ public class ReglementRestController {
 
     @Autowired
     IReglementService reglementService;
-
+    
+    
 
     // http://localhost:8089/SpringMVC/reglement/add-reglement
     @PostMapping("/add-reglement")

@@ -11,6 +11,9 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+
+
+
 @Entity
 public class Reglement implements Serializable{
 	private static final long serialVersionUID = 1L;
@@ -66,17 +69,16 @@ public class Reglement implements Serializable{
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
-	protected Reglement(Long idReglement, float montantPaye, float montantRestant, Boolean payee, Date dateReglement,
+	public Reglement( float montantPaye, float montantRestant, Boolean payee, Date dateReglement,
 			Facture facture) {
 		super();
-		this.idReglement = idReglement;
 		this.montantPaye = montantPaye;
 		this.montantRestant = montantRestant;
 		this.payee = payee;
 		this.dateReglement = dateReglement;
 		this.facture = facture;
 	}
-	protected Reglement() {
+	public Reglement() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
