@@ -1,4 +1,4 @@
 FROM openjdk:11
 EXPOSE 8089
-ADD target/sirine100.jar sirine100.jar
-ENTRYPOINT ["java","-jar","/sirine100.jar"]
+ADD target/achat-1.0.jar achat-1.0.jar
+ENTRYPOINT ["java","-jar","/achat-1.0.jar"]
