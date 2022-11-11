@@ -1,4 +1,4 @@
-package tn.esprit.rh.achat.util;
+package tn.esprit.rh.achat;
 
 import java.util.Arrays;
 import java.util.Collections;
