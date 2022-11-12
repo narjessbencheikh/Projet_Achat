@@ -1,4 +1,5 @@
 tn\esprit\rh\achat\repositories\OperateurRepository.class
+tn\esprit\rh\achat\SpringFoxSwaggerConfig.class
 tn\esprit\rh\achat\repositories\SecteurActiviteRepository.class
 tn\esprit\rh\achat\services\FournisseurServiceImpl.class
 tn\esprit\rh\achat\services\OperateurServiceImpl.class
@@ -43,6 +44,5 @@ tn\esprit\rh\achat\entities\Facture.class
 tn\esprit\rh\achat\entities\Reglement.class
 tn\esprit\rh\achat\entities\Operateur.class
 tn\esprit\rh\achat\entities\DetailFacture.class
-tn\esprit\rh\achat\util\SpringFoxSwaggerConfig.class
 tn\esprit\rh\achat\entities\DetailFournisseur.class
 tn\esprit\rh\achat\repositories\DetailFactureRepository.class
