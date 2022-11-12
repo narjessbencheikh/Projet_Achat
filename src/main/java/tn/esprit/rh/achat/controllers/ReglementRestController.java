@@ -33,6 +33,7 @@ public class ReglementRestController {
     @PostMapping("/add-reglement")
     @ResponseBody
     public Reglement addReglement(@RequestBody Reglement r) {
+    	
         Reglement reglement = reglementService.addReglement(r);
         return reglement;
     }
