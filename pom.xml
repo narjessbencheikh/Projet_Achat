@@ -63,13 +63,13 @@
 
 
 	</dependencies>
-	
+
 	<distributionManagement>
-	<repository>
-	<id>deploymentRepo</id>
-	<name>Nexus Repository</name>
-	<url>http:192.168.122.1:8081/repository/maven-snapshots</url>
-	</repository>
+		<repository>
+			<id>deploymentRepo</id>
+			<name>Nexus Repository</name>
+			<url>http://192.168.122.1:8081/repository/maven-releases/</url>
+		</repository>
 	</distributionManagement>
 
 
@@ -99,7 +99,7 @@
 			</plugin>
 		</plugins>
 		<finalName>app-achat-1.0</finalName>
-		
+
 	</build>
 
 </project>
