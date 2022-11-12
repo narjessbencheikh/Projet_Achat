@@ -3,6 +3,7 @@ package tn.esprit.rh.achat;
 import java.util.Date;
 import java.util.List;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -12,21 +13,50 @@ import tn.esprit.rh.achat.entities.Produit;
 import tn.esprit.rh.achat.repositories.CategorieProduitRepository;
 import tn.esprit.rh.achat.repositories.ProduitRepository;
 import tn.esprit.rh.achat.repositories.StockRepository;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.junit.jupiter.MockitoExtension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.apache.log4j.Logger;
+import org.apache.log4j.LogManager;
+import tn.esprit.rh.achat.services.ProduitServiceImpl;
 
+@ExtendWith(MockitoExtension.class)
 @SpringBootTest
 public class ProduitServiceImplTest {
+
+	private static final Logger l =LogManager.getLogger(ProduitServiceImplTest.class);
 	
-	@Autowired
+	/*@Autowired
 	ProduitRepository produitRepository;
 	@Autowired
 	StockRepository stockRepository;
 	@Autowired
-	CategorieProduitRepository categorieProduitRepository;
-	
+	CategorieProduitRepository categorieProduitRepository;*/
+
+	@Autowired
+	ProduitServiceImpl ps;
+
+	@InjectMocks
+	ProduitServiceImpl psm;
+
+	@Mock
+	ProduitRepository pr;
+
+	@Test
+	public void testRetrieveAllReglements() {
+		l.info("testRetrieveAllReglements()");
+		List<Produit> listReglements = ps.retrieveAllProduits();
+		Assertions.assertEquals(0, listReglements.size());
+		l.info("Out methode testRetrieveAllReglements()");
+	}
+
+
+
 
 	
-	
-	@Test
+	/*@Test
 	public void addProduitTest () 
 	{
 		//Produit p =new Produit ((long)1 ,"ghada","yosra",(float)12.2);
@@ -75,7 +105,7 @@ public class ProduitServiceImplTest {
 			System.out.println(" Produit : " + produit);
 		}
 		
-	}
+	}*/
 
 	
 	
