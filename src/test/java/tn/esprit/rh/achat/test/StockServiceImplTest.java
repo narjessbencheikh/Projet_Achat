@@ -67,7 +67,7 @@ public class StockServiceImplTest {
 	@Test
 	void TestretrieveStock(){
 		
-		Stock exist = stock.retrieveStock((long) 1);
+		Stock exist = stock.retrieveStock((long) 33);
 		System.out.println("ID = " +exist.getIdStock());
 		assertNotNull(exist);
 }
