@@ -64,6 +64,13 @@ pipeline {
                  } 
              } 
          }
+            stage("docker compose ") {
+            steps {
+                script {
+                  sh 'docker compose up -d'
+                }
+            }
+        }
 
 
    
