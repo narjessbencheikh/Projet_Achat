@@ -2,7 +2,7 @@ version: "3.4"
 
 services:
   mysqlcontainer:
-    container_name: mysqlcontainer3
+    container_name: mysqlcontainer4
     ports:
       - '3306:3306'
     environment:
