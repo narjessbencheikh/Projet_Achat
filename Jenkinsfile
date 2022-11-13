@@ -26,6 +26,15 @@ pipeline {
                 }
             }
         }
+        stage("code QualityCheck Sonar") {
+            steps {
+                script {
+             sh " mvn sonar:sonar -Dsonar.projectKey= wissem-Dsonar.host.url=http://192.168.1.150:9000   -Dsonar.login=47d83366fee9dafbf03db533eeae79c47ffe559e"
+
+                }
+            }
+        }
+
 
    
     }  
