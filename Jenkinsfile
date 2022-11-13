@@ -44,6 +44,26 @@ pipeline {
 }                }
             }
         }
+        stage("creating docker image ") {
+            steps {
+                script {
+                  sh 'docker build -t wissemoueslati/spring:latest .'
+                }
+            }
+        }
+         
+         
+           stage("pushing image to docker hub") { 
+             steps { 
+                 script { 
+                    withCredentials([usernamePassword(credentialsId: 'dockerhub', usernameVariable: 'USER', passwordVariable: 'PASS')]) {
+                    sh "echo $PASS | docker login -u $USER --password-stdin"
+                    sh 'docker push wissemoueslati/spring:latest'
+                        
+                    }
+                 } 
+             } 
+         }
 
 
    
