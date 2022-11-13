@@ -21,7 +21,8 @@ public class StockServiceImplTest {
 
 	@Autowired
 	IStockService stock;
-	
+	@Autowired
+	StockRepository strepo;
 	
 	
 	
@@ -44,9 +45,23 @@ public class StockServiceImplTest {
 	
 	
 	@Test
-	public void testRetrieveAllStocks() {
-		List<Stock> listStocks = stock.retrieveAllStocks();
-		Assertions.assertEquals(0, listStocks.size());
+	void TestretrieveAllStocks(){
+		
+		List<Stock> l = stock.retrieveAllStocks();
+		for(Stock s : l) {
+			System.out.println("Stock : " + s.getIdStock());
+			System.out.println("Stock : " + s.getLibelleStock());
+			System.out.println("Stock : " + s.getQte());
+			System.out.println("Stock : " + s.getQteMin());
+			System.out.println("**********************************");
+			}
+		//assertEquals(strepo.findAll().size(),l.size());
+		System.out.println("Quantités de Stock : " + l.size());
+	
+	
+		assertThat(l).hasSize(strepo.findAll().size());
+		
+	
 	}
 	
 	@Test
