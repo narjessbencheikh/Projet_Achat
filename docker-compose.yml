@@ -17,10 +17,13 @@ services:
     depends_on:
       - mysqlcontainer
     container_name: achat
+    build: .
+    restart: on-failure
     ports:
       - '8089:8089'
     image: ahmedmezghani/achat
-
-
+    stdin_open: true
+    tty: true
+   
 volumes:
   mysqlcontainer: { }
