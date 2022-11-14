@@ -1,9 +1,9 @@
-version: "2"
+version: "3.4"
 
 services:
   mysqldb:
    container_name: mysqldb
-   image: mysql:8
+   image: mysql:latest
    restart: unless-stopped
    ports:
     - 3306:3306
@@ -11,13 +11,16 @@ services:
     MYSQL_DATABASE: achatdb
     MYSQL_ROOT_PASSWORD: pass
    volumes:
-     - /home/mysql/data:/var/lib/mysql --user 1000
+     - mysqldb:/var/lib/mysql:rw 
 
   spring_app:
-   image: app:latest
-   container_name: achatprojet
+   image: mahdiben/achat
+   container_name: achat
    restart: on-failure
    ports:
     - 8089:8089
    depends_on:
     - mysqldb
+   
+volumes:
+   mysqldb: {} 
