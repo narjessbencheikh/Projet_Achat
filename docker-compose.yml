@@ -10,7 +10,7 @@ services:
       - MYSQL_DATABASE=achatdb
     restart: always
     volumes:
-      - mysqlcontainer:/var/lib/mysql:rw
+      - mysqldb:/var/lib/mysql:rw
     image: 'mysql:latest'
     
   achat:
