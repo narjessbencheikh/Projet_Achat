@@ -4,7 +4,7 @@ services:
   mysqldb:
     container_name: mysqldb
     ports:
-      - '3306:3306'
+      - '3309:3309'
     environment:
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=achatdb
