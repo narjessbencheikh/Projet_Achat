@@ -1,6 +1,7 @@
 package tn.esprit.rh.achat;
 
 import lombok.extern.slf4j.Slf4j;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.runner.RunWith;
@@ -16,24 +17,18 @@ import tn.esprit.rh.achat.entities.Stock;
 import tn.esprit.rh.achat.repositories.StockRepository;
 import tn.esprit.rh.achat.services.StockServiceImpl;
 
-
-import org.junit.jupiter.api.Assertions;
-
-
-
 import java.util.Optional;
 
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertSame;
 import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-
 @RunWith(SpringRunner.class)
 @Slf4j
 @ExtendWith(MockitoExtension.class)
 
 @MockitoSettings(strictness = Strictness.LENIENT)
-public class TestSotck {
+public class TestStockMock {
     @Mock
     StockRepository sto;
     @InjectMocks
@@ -87,5 +82,5 @@ public class TestSotck {
         Assertions.assertEquals(s,s1);
 
     }
-    }
+}
 
