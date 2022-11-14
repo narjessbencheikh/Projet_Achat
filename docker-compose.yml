@@ -14,7 +14,7 @@ services:
      - mysqldb:/var/lib/mysql:rw 
 
   spring_app:
-   image: mahdiben/achat
+   image: mahdiben/app:latest
    container_name: achat
    restart: on-failure
    ports:
