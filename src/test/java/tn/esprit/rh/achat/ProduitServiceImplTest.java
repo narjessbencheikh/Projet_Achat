@@ -33,12 +33,12 @@ public class ProduitServiceImplTest {
 	ProduitRepository profRepository;
 	@InjectMocks
 	ProduitServiceImpl serviceImpl;
-	Produit prod = new Produit(1L, "code1", "libelle1", 120L,null, null , null , null , null);
+	Produit prod = new Produit(1L, "ano", "libe", 25L,null, null );
 
 	List<Produit> listproduit = new ArrayList<Produit>() {
 		{
-			add(new Produit(2L, "code2", "libelle2", 200L, null, null , null , null , null ));
-			add(new Produit(3L, "code3", "libelle3", 300L, null, null , null , null , null ));
+			add(new Produit(2L, "qbc", "libe3", 50L, null, null ));
+			add(new Produit(3L, "lko", "lib2", 22222L, null, null  ));
 		}
 	};
 	@Test
