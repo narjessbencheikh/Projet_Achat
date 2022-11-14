@@ -24,6 +24,7 @@ pipeline {
                 steps{
                 sh 'mvn package -Dmaven.test.skip=true'
                 }
+             }
              stage('MVN TEST'){
                 steps{
                  sh 'mvn test'
