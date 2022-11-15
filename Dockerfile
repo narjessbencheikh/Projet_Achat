@@ -1,8 +1,6 @@
-#FROM openjdk:11
-#EXPOSE 8089
-#ADD target/achat-1.0.jar achat-1.0.jar
-#ENTRYPOINT ["java","-jar","/achat-1.0.jar"]
-
-FROM openjdk:8-alpine
+FROM openjdk:11
+EXPOSE 8089
 ADD target/achat-1.0.jar achat-1.0.jar
 ENTRYPOINT ["java","-jar","/achat-1.0.jar"]
+
+
