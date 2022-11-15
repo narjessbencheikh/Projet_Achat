@@ -13,7 +13,7 @@ services:
       - mysqlcontainer:/var/lib/mysql:rw
     image: 'mysql:latest'
     
-  achat2:
+  achat:
     depends_on:
       - mysqlcontainer
     container_name: achat2
