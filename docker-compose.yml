@@ -13,17 +13,13 @@ services:
       - mysqlcontainer:/var/lib/mysql:rw
     image: 'mysql:latest'
     
-  achat:
+  achat2:
     depends_on:
       - mysqlcontainer
     container_name: achat2
-    build: .
-    restart: on-failure
     ports:
       - '8089:8089'
     image: ahmedmezghani/achat2
-    stdin_open: true
-    tty: true
    
 volumes:
   mysqlcontainer: { }
